@@ -1,0 +1,326 @@
+<!-- contact.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>StyleMint - Contact Us</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:'Poppins',sans-serif;
+    }
+
+    body{
+      background:#e7e9ec;
+      color:#252525;
+    }
+
+    /* NAVBAR */
+
+    nav{
+      width:100%;
+      padding:20px 8%;
+      background:#151313;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      box-shadow:0 0px 10px rgba(10, 10, 10, 0.08);
+      position:sticky;
+      top:0;
+      z-index:1000;
+      opacity: 0.8;
+    }
+
+    .logo{
+      font-size:28px;
+      font-weight:700;
+      color:#6c63ff;
+    }
+
+    .nav-links{
+      display:flex;
+      gap:25px;
+    }
+
+    .nav-links a{
+      text-decoration:none;
+      color:#d3d1d1;
+      font-weight:500;
+      transition:0.3s;
+      
+    }
+
+    .nav-links a:hover{
+      color:#6c63ff;
+      box-shadow: 0 0 10px rgb(53, 51, 51);
+      padding: 4px;
+      border-radius: 4px;
+    }
+
+    /* HEADER */
+
+    .contact-header{
+      /* background:linear-gradient(to right,#6c63ff,#8f88ff); */
+      background: linear-gradient(to right, #11182a, #15295e);
+      color:#fff;
+      text-align:center;
+      padding:90px 30px;
+    }
+
+    .contact-header h1{
+      font-size:55px;
+      margin-bottom:15px;
+      font-family: 'Times New Roman', Times, serif;
+    }
+
+    .contact-header p{
+      font-size:18px;
+      max-width:700px;
+      margin:auto;
+      line-height: 1.8;
+    }
+
+    /* CONTACT SECTION */
+
+    .contact-section{
+      padding:80px 8%;
+      display:flex;
+      justify-content:space-between;
+      gap:50px;
+      flex-wrap:wrap;
+    }
+
+    .contact-info{
+      flex:1;
+      min-width:300px;
+    }
+
+    .contact-info h2{
+      font-size:40px;
+      margin-bottom:20px;
+    }
+
+    .contact-info p{
+      color:#666;
+      line-height:1.9;
+      margin-bottom:30px;
+    }
+
+    .info-box{
+      background:#fdf6f6;
+      padding:20px;
+      border-radius:15px;
+      margin-bottom:20px;
+      box-shadow:0 0px 15px rgba(23, 23, 23, 0.08);
+      
+    }
+
+    .info-box h3{
+      margin-bottom:10px;
+      color:#6c63ff;
+    }
+
+    /* FORM */
+
+    .contact-form{
+      flex:1;
+      min-width:300px;
+      background:#fff;
+      padding:40px;
+      border-radius:20px;
+      box-shadow:0 0px 20px rgba(0,0,0,0.08);
+    }
+
+    .contact-form h2{
+      margin-bottom:25px;
+      font-size:35px;
+    }
+
+    .input-box{
+      margin-bottom:20px;
+    }
+
+    .input-box input,
+    .input-box textarea{
+      width:100%;
+      padding:15px;
+      border:1px solid #ddd;
+      border-radius:10px;
+      outline:none;
+      font-size:16px;
+      transition:0.3s;
+    }
+
+    .input-box input:focus,
+    .input-box textarea:focus{
+      border-color:#6c63ff;
+    }
+
+    .input-box textarea{
+      height:140px;
+      resize:none;
+    }
+
+    .btn{
+      width:100%;
+      padding:15px;
+      border:none;
+      border-radius:30px;
+      background:#6c64f8;
+      color:#fff;
+      font-size:17px;
+      font-weight:600;
+      cursor:pointer;
+      transition:0.8s;
+    }
+
+    .btn:hover{
+      background:#171436;
+    }
+
+    /* FOOTER */
+
+    footer{
+      background:#111;
+      color:#fff;
+      text-align:center;
+      padding:30px;
+      margin-top:50px;
+    }
+
+    /* RESPONSIVE */
+
+    @media(max-width:900px){
+
+      .nav-links{
+        display:none;
+      }
+
+      .contact-header h1{
+        font-size:40px;
+      }
+
+      .contact-section{
+        flex-direction:column;
+      }
+
+    }
+
+  </style>
+
+</head>
+<body>
+
+  <!-- NAVBAR -->
+
+  <nav>
+
+    <div class="logo">StyleMint</div>
+
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="feature.html">Features</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+  </nav>
+
+  <!-- HEADER -->
+
+  <section class="contact-header">
+
+    <h1>Contact Us</h1>
+
+    <p>
+      Have any questions or suggestions? Feel free to contact our team anytime.
+    </p>
+
+  </section>
+
+  <!-- CONTACT SECTION -->
+
+  <section class="contact-section">
+
+    <!-- CONTACT INFO -->
+
+    <div class="contact-info">
+
+      <h2>Get In Touch</h2>
+
+      <p>
+        We are always ready to help you. Contact us for support,
+        product information or any business inquiry.
+      </p>
+
+      <div class="info-box">
+        <h3>📍 Address</h3>
+        <p>Shikarpur, sindh, Pakistan</p>
+      </div>
+
+      <div class="info-box">
+        <h3>📞 Phone</h3>
+        <p>+92 3293804439</p>
+      </div>
+
+      <div class="info-box">
+        <h3>📧 Email</h3>
+        <p>support@stylemint.com</p>
+      </div>
+
+    </div>
+
+    <!-- CONTACT FORM -->
+
+    <div class="contact-form">
+
+      <h2>Send Message</h2>
+
+      <form>
+
+        <div class="input-box">
+          <input type="text" placeholder="Your Name" required>
+        </div>
+
+        <div class="input-box">
+          <input type="email" placeholder="Your Email" required>
+        </div>
+
+        <div class="input-box">
+          <input type="text" placeholder="Subject" required>
+        </div>
+
+        <div class="input-box">
+          <textarea placeholder="Write Your Message"></textarea>
+        </div>
+
+        <button type="submit" class="btn">Send Message</button>
+
+      </form>
+
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <p>© 2026 StyleMint. All Rights Reserved.</p>
+
+  </footer>
+
+</body>
+</html>
