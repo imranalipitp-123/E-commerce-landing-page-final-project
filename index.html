@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>StyleMint-Home</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:'Poppins',sans-serif;
+    }
+
+    body{
+      background:#f5f7fb;
+      color:#222;
+    }
+
+    html{
+      scroll-behavior:smooth;
+    }
+
+    /* NAVBAR */
+
+    nav{
+      width:100%;
+      padding:20px 8%;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      /* background:#fff; */
+      background:#151313;
+      position:sticky;
+      top:0;
+      z-index:1000;
+      /* box-shadow:0 2px 10px rgba(0,0,0,0.08); */
+      box-shadow:0 0px 10px rgba(10, 10, 10, 0.08);
+      opacity: 0.8;
+    }
+
+    .logo{
+      font-size:28px;
+      font-weight:700;
+      color:#6c63ff;
+    }
+
+    .nav-links{
+      display:flex;
+      gap:30px;
+    }
+
+    .nav-links a{
+      text-decoration:none;
+      /* color:#333; */
+      color:#d3d1d1;
+      font-weight:500;
+      transition:0.3s;
+    }
+
+    .nav-links a:hover{
+      color:#6c63ff;
+      box-shadow: 0 0 10px rgb(53, 51, 51);
+      
+      padding: 4px;
+      border-radius: 4px;
+    }
+
+    .btn{
+      padding:12px 25px;
+      border:none;
+      border-radius:30px;
+      background:#6c63ff;
+      color:#fff;
+      cursor:pointer;
+      font-weight:600;
+      transition:0.8s;
+    }
+
+    .btn:hover{
+      /* background:#574bdb; */
+      background:#171436;
+      transform:translateY(-2px);
+    }
+
+    /* HERO */
+
+    .hero{
+      min-height:90vh;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      padding:50px 8%;
+      gap:50px;
+    }
+
+    .hero-text{
+      flex:1;
+    }
+
+    .hero-text h1{
+      font-size:60px;
+      line-height:1.2;
+      margin-bottom:20px;
+    }
+
+    .hero-text span{
+      color:#6c63ff;
+    }
+
+    .hero-text p{
+      color:#666;
+      margin-bottom:30px;
+      line-height:1.8;
+    }
+
+    .hero-image{
+      flex:1;
+      text-align:center;
+    }
+
+    .hero-image img{
+      width:100%;
+      max-width:500px;
+      animation:float 3s ease-in-out infinite;
+      border-radius: 12px;
+    }
+
+    @keyframes float{
+      0%{transform:translateY(0);}
+      50%{transform:translateY(-15px);}
+      100%{transform:translateY(0);}
+    }
+
+    /* FEATURES */
+
+    .features{
+      padding:80px 8%;
+    }
+
+    .section-title{
+      text-align:center;
+      margin-bottom:60px;
+    }
+
+    .section-title h2{
+      font-size:40px;
+      margin-bottom:10px;
+    }
+
+    .section-title p{
+      color:#777;
+    }
+
+    .feature-boxes{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:30px;
+    }
+
+    .feature{
+      background:#fff;
+      padding:35px;
+      border-radius:20px;
+      text-align:center;
+      transition: 3s;
+      box-shadow:0 5px 15px rgba(0,0,0,0.05);
+    }
+
+    .feature:hover{
+      /* transform:translateY(-10px); */
+      transform: scale(1.1);
+      background: linear-gradient(to right, #11182a, #15295e);
+      color: #fff;
+    }
+
+    .feature i{
+      font-size:50px;
+      color:#6c63ff;
+      margin-bottom:20px;
+    }
+
+    .feature h3{
+      margin-bottom:15px;
+    }
+
+    .feature p{
+      color:#666;
+      line-height:1.7;
+    }
+
+    /* PRODUCTS */
+
+    .products{
+      padding:80px 8%;
+    }
+
+    .product-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:30px;
+    }
+
+    .card{
+      background:#fff;
+      border-radius:20px;
+      overflow:hidden;
+      box-shadow:0 5px 15px rgba(0,0,0,0.08);
+      transition: 3s;
+    }
+
+    .card:hover{
+      transform:translateY(-10px);
+      background: linear-gradient(to right, #11182a, #15295e);
+      color: #fff;
+    }
+
+    .card img{
+      width:100%;
+      height:250px;
+      object-fit:cover;
+      border-radius: 10px;
+    }
+
+    .card-content{
+      padding:20px;
+    }
+
+    .card-content h3{
+      margin-bottom:10px;
+    }
+
+    .price{
+      color:#6c63ff;
+      font-size:22px;
+      font-weight:700;
+      margin:15px 0;
+    }
+
+    /* NEWSLETTER */
+
+    .newsletter{
+      margin:80px 8%;
+      /* background:linear-gradient(to right,#6c63ff,#8f88ff); */
+      background: linear-gradient(to right, #11182a, #15295e);
+      padding:60px;
+      border-radius:30px;
+      text-align:center;
+      color:#fff;
+    }
+
+    .newsletter h2{
+      font-size:40px;
+      margin-bottom:20px;
+    }
+
+    .newsletter p{
+      margin-bottom:30px;
+    }
+
+    .newsletter input{
+      width:60%;
+      padding:15px;
+      border:none;
+      border-radius:30px;
+      outline:none;
+      margin-bottom:20px;
+    }
+    button a{
+      text-decoration: none;
+      color: white;
+    }
+
+    /* FOOTER */
+
+    footer{
+      background:#111;
+      color:#fff;
+      text-align:center;
+      padding:30px;
+      margin-top:50px;
+    }
+
+    /* RESPONSIVE */
+
+    @media(max-width:900px){
+
+      .hero{
+        flex-direction:column;
+        text-align:center;
+      }
+
+      .hero-text h1{
+        font-size:42px;
+      }
+
+      .nav-links{
+        display:none;
+      }
+
+      .newsletter input{
+        width:100%;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+
+  <nav>
+    <div class="logo">StyleMint</div>
+
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="product.html">Products</a>
+      <a href="feature.html">Features</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <button class="btn">Shop Now</button>
+  </nav>
+
+  <!-- HERO SECTION -->
+
+  <section class="hero">
+
+    <div class="hero-text">
+      <h1>Discover The Best <span>Fashion Collection</span></h1>
+
+      <p>
+        Upgrade your style with premium quality products.
+        Modern fashion, amazing discounts, and fast delivery
+        all in one place.
+      </p>
+
+      <button class="btn"><a href="product.html">Explore Products</button></a>
+    </div>
+
+    <div class="hero-image">
+      <!-- <img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?q=80&w=1000&auto=format&fit=crop" alt="Fashion"> -->
+       <img src="Home page picture.jpeg" alt="">
+    </div>
+
+  </section>
+
+  <!-- FEATURES -->
+
+  <section class="features">
+
+    <div class="section-title">
+      <h2>Why Choose Us</h2>
+      <p>Best services with premium quality shopping experience</p>
+    </div>
+
+    <div class="feature-boxes">
+
+      <div class="feature">
+        <i>🚚</i>
+        <h3>Fast Delivery</h3>
+        <p>Get your products delivered quickly and safely to your doorstep.</p>
+      </div>
+
+      <div class="feature">
+        <i>💳</i>
+        <h3>Secure Payment</h3>
+        <p>100% secure payment methods for safe and trusted shopping.</p>
+      </div>
+
+      <div class="feature">
+        <i>⭐</i>
+        <h3>Premium Quality</h3>
+        <p>High-quality products specially selected for modern customers.</p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- PRODUCTS -->
+
+  <section class="products">
+
+    <div class="section-title">
+      <h2>Trending Products</h2>
+      <p>Most popular products this season</p>
+    </div>
+
+    <div class="product-grid">
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=1000&auto=format&fit=crop" alt="">
+
+        <div class="card-content">
+          <h3>Running Shoes</h3>
+          <p>Comfortable and stylish sneakers for everyday use.</p>
+          <div class="price">$89</div>
+          <button class="btn">Add To Cart</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <!-- <img src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?q=80&w=1000&auto=format&fit=crop" alt=""> -->
+         <img src="data:image/jpeg;base64,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" alt="">
+        <div class="card-content">
+          <h3>Modern Jacket</h3>
+          <p>Premium winter jacket with elegant modern design.</p>
+          <div class="price">$120</div>
+          <button class="btn">Add To Cart</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <!-- <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?q=80&w=1000&auto=format&fit=crop" alt=""> -->
+          <img src="https://images.unsplash.com/photo-1600003014608-c2ccc1570a65?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGx1eHVyeSUyMHdhdGNofGVufDB8fDB8fHww" alt="">
+        <div class="card-content">
+          <h3>Luxury Watch</h3>
+          <p>Stylish and classy watch for your premium lifestyle.</p>
+          <div class="price">$199</div>
+          <button class="btn">Add To Cart</button>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- NEWSLETTER -->
+
+  <section class="newsletter">
+
+    <h2>Subscribe For Updates</h2>
+
+    <p>
+      Get latest fashion updates and special discounts directly in your inbox.
+    </p>
+
+    <input type="email" placeholder="Enter your email">
+
+    <br>
+
+    <button class="btn">Subscribe</button>
+
+  </section>
+
+  <!-- FOOTER -->
+
+  <footer>
+    <p>© 2026 StyleMint. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
