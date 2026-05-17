@@ -1,0 +1,380 @@
+<!-- products.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StyleMint - Products</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:'Poppins',sans-serif;
+    }
+
+    body{
+      background:#f5f7fb;
+      color:#222;
+    }
+
+    /* NAVBAR */
+
+    nav{
+      /* background:#fff; */
+      background:#151313;
+      padding:20px 8%;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      /* box-shadow:0 2px 10px rgba(0,0,0,0.08); */
+      box-shadow:0 0px 10px rgba(10, 10, 10, 0.08);
+      position:sticky;
+      top:0;
+      z-index:1000;
+      opacity: 0.8;
+    }
+
+    .logo{
+      font-size:28px;
+      font-weight:700;
+      color:#6c63ff;
+    }
+
+    .nav-links{
+      display:flex;
+      gap:25px;
+    }
+
+    .nav-links a{
+      text-decoration:none;
+      /* color:#333; */
+      color:#d3d1d1;
+      font-weight:500;
+      transition:0.3s;
+    }
+
+    .nav-links a:hover{
+      color:#6c63ff;
+      box-shadow: 0 0 10px rgb(53, 51, 51);
+      padding: 4px;
+      border-radius: 4px;
+    }
+
+    /* HEADER */
+
+    .page-header{
+      text-align:center;
+      padding:70px 20px;
+      /* background:linear-gradient(to right,#6c63ff,#8f88ff); */
+      background: linear-gradient(to right, #11182a, #15295e);
+      color:#fff;
+    }
+
+    .page-header h1{
+      font-size:50px;
+      margin-bottom:10px;
+    }
+
+    .page-header p{
+      font-size:18px;
+    }
+
+    /* PRODUCTS */
+
+    .products{
+      padding:80px 8%;
+    }
+
+    .product-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+      gap:35px;
+    }
+
+    .card{
+      background:#fff;
+      border-radius:20px;
+      overflow:hidden;
+      transition:0.8s;
+      box-shadow:0 5px 20px rgba(0,0,0,0.08);
+    }
+
+    .card:hover{
+      /* transform:translateY(-10px); */
+      transform:translateY(-10px);
+      background: linear-gradient(to right, #11182a, #15295e);
+      color: #fff;
+   
+    }
+
+    .card img{
+      width:100%;
+      height:280px;
+      object-fit:cover;
+    }
+
+    .card-content{
+      padding:20px;
+    }
+
+    .card-content h3{
+      margin-bottom:10px;
+      font-size:22px;
+    }
+
+    .card-content p{
+      color:#666;
+      line-height:1.7;
+      margin-bottom:15px;
+    }
+
+    .price{
+      font-size:24px;
+      font-weight:700;
+      color:#6c63ff;
+      margin-bottom:15px;
+    }
+
+    .btn{
+      width:100%;
+      padding:14px;
+      border:none;
+      background:#6c63ff;
+      color:#fff;
+      border-radius:30px;
+      cursor:pointer;
+      font-size:16px;
+      font-weight:600;
+      transition:0.8s;
+      text-align: center;
+    }
+
+    .btn:hover{
+      /* background:#574bdb; */
+      background:#171436;
+      transform:translateY(-2px);
+    }
+
+    /* FOOTER */
+
+    footer{
+      background:#111;
+      color:#fff;
+      text-align:center;
+      padding:25px;
+      margin-top:60px;
+    }
+
+    /* RESPONSIVE */
+
+    @media(max-width:768px){
+
+      .nav-links{
+        display:none;
+      }
+
+      .page-header h1{
+        font-size:38px;
+      }
+
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+
+  <nav>
+
+    <div class="logo">StyleMint</div>
+
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="product.html">Products</a>
+      <a href="feature.html">Features</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+  </nav>
+
+  <!-- PAGE HEADER -->
+
+  <section class="page-header">
+
+    <h1>Our Products</h1>
+
+    <p>
+      Explore our latest fashion collection with premium quality products.
+    </p>
+
+  </section>
+
+  <!-- PRODUCTS SECTION -->
+
+  <section class="products">
+
+    <div class="product-grid">
+
+      <!-- PRODUCT 1 -->
+
+      <div class="card">
+
+        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=1000&auto=format&fit=crop" alt="Shoes">
+
+        <div class="card-content">
+
+          <h3>Running Shoes</h3>
+
+          <p>
+            Stylish and comfortable shoes perfect for sports and daily wear.
+          </p>
+
+          <div class="price">$89</div>
+
+          <button class="btn">Add To Cart</button>
+
+        </div>
+
+      </div>
+
+      <!-- PRODUCT 2 -->
+
+      <div class="card">
+
+        <!-- <img src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?q=80&w=1000&auto=format&fit=crop" alt="Jacket"> -->
+         <img src="data:image/jpeg;base64,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" alt="">
+
+        <div class="card-content">
+
+          <h3>Winter Jacket</h3>
+
+          <p>
+            Premium quality modern jacket with elegant fashion design.
+          </p>
+
+          <div class="price">$120</div>
+
+          <button class="btn">Add To Cart</button>
+
+        </div>
+
+      </div>
+
+      <!-- PRODUCT 3 -->
+
+      <div class="card">
+
+        <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?q=80&w=1000&auto=format&fit=crop" alt="Watch">
+
+        <div class="card-content">
+
+          <h3>T-Shirts</h3>
+
+          <p>
+            Classy wrist watch designed for premium lifestyle lovers.
+          </p>
+
+          <div class="price">$85</div>
+
+          <button class="btn">Add To Cart</button>
+
+        </div>
+
+      </div>
+
+      <!-- PRODUCT 4 -->
+
+      <div class="card">
+
+        <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?q=80&w=1000&auto=format&fit=crop" alt="T-Shirt">
+
+        <div class="card-content">
+
+          <h3>Casual T-Shirt</h3>
+
+          <p>
+            Soft cotton t-shirt with trendy modern style and comfort.
+          </p>
+
+          <div class="price">$35</div>
+
+          <button class="btn">Add To Cart</button>
+
+        </div>
+
+      </div>
+
+      <!-- PRODUCT 5 -->
+
+      <div class="card">
+
+        <!-- <img src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?q=80&w=1000&auto=format&fit=crop" alt="Bag"> -->
+         <img src="https://media.istockphoto.com/id/519309544/photo/colorful-leather-handbags-for-sale.webp?a=1&b=1&s=612x612&w=0&k=20&c=z8FXKFxBXwmTPx7-ZnqnUcRJ31I-vRx86rKciA_lzQg=" alt="">
+        <div class="card-content">
+
+          <h3>Leather Bag</h3>
+
+          <p>
+            Elegant leather bag suitable for travel and office use.
+          </p>
+
+          <div class="price">$150</div>
+
+          <button class="btn">Add To Cart</button>
+
+        </div>
+
+      </div>
+
+      <!-- PRODUCT 6 -->
+
+      <div class="card">
+
+        <!-- <img src="https://images.unsplash.com/photo-1491553895911-0055eca6402d?q=80&w=1000&auto=format&fit=crop" alt="Sneakers">
+          -->
+        <img src="https://images.unsplash.com/photo-1618677831708-0e7fda3148b4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZmFzaGlvbiUyMHNuZWFrZXJzfGVufDB8fDB8fHww" alt="">
+
+        <div class="card-content">
+
+          <h3>Fashion Sneakers</h3>
+
+          <p>
+            Trendy sneakers with modern design and maximum comfort.
+          </p>
+
+          <div class="price">$99</div>
+
+          <button class="btn">Add To Cart</button>
+
+        </div>
+        
+
+      </div>
+      <div class="btn">
+         More Products
+        </div>
+
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <p>© 2026 StyleMint. All Rights Reserved.</p>
+
+  </footer>
+
+</body>
+</html>
